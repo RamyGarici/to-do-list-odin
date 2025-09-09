@@ -2,7 +2,7 @@ body {
 
   height: 90vh;
   background: #061014;
-background: radial-gradient(circle, rgba(6, 16, 20, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(255, 229, 0, 1) 100%);
+  background: radial-gradient(circle, rgba(6, 16, 20, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(255, 229, 0, 1) 100%);
   padding:20px;
  
 
@@ -13,6 +13,10 @@ background: radial-gradient(circle, rgba(6, 16, 20, 1) 0%, rgba(0, 0, 0, 1) 0%, 
   background:#f5f5f5;
   border-radius: 10px 0 0 10px;
   margin: 20px 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
 }
 
 #project-name {
@@ -21,6 +25,7 @@ background: radial-gradient(circle, rgba(6, 16, 20, 1) 0%, rgba(0, 0, 0, 1) 0%, 
    border-radius: 0 10px 0 0;
     background:#f5f5f5;
     margin: 20px 20px 0 0;
+    padding: 20px;
 }
 
 #main-container {
@@ -29,6 +34,7 @@ background: radial-gradient(circle, rgba(6, 16, 20, 1) 0%, rgba(0, 0, 0, 1) 0%, 
    border-radius: 0 0 10px 0;
     background:#f5f5f5;
     margin: 0 20px 20px 0;
+    padding: 20px;
 }
 
 #logo-title{
@@ -49,4 +55,60 @@ background: radial-gradient(circle, rgba(6, 16, 20, 1) 0%, rgba(0, 0, 0, 1) 0%, 
     height: 100%;
     background-color: white;
     border-radius: 10px;
+}
+
+
+
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+
+
+/* From Uiverse.io by catraco */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2em;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  padding: .5em 1.5em;
+  color: white;
+  background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(0, 130, 40);
+  box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
+  letter-spacing: 0.08em;
+  border-radius: 20em;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cssbuttons-io-button:hover {
+  filter: brightness(1.2);
+  color: rgb(0, 0, 0, .5);
+}
+
+.cssbuttons-io-button:active {
+  transition: 0s;
+  transform: rotate(-10deg);
+}
+
+
+h1{
+  font-size: 30px;
+  font-family: 'Roboto';
 }
