@@ -10,10 +10,10 @@ export function saveProjects(projects){
 export function loadProjects(){
      const data = localStorage.getItem(STORAGE_KEY);
      if(!data) return;
-     rawProjects = JSON.parse(data);
+     const rawProjects = JSON.parse(data);
 
      return rawProjects.map(projectData=>{
-        const project = newProject(projectData.name);
+        const project = new Project(projectData.name);
         project.todos= projectData.todos.map(todoData=>{
             const todo = new Todo(
         todoData.title,
@@ -27,7 +27,4 @@ export function loadProjects(){
         })
         return project;
      })
-
-
-
 }
