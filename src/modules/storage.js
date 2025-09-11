@@ -19,7 +19,8 @@ export function loadProjects(){
         todoData.title,
         todoData.description,
         todoData.dueDate,
-        todoData.priority
+        todoData.priority,
+        todoData.color
       );
       todo.completed = todoData.completed;
       todo.created = new Date(todoData.created);

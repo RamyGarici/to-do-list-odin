@@ -9,13 +9,3 @@ import logo from "./assets/todologo.png";
 
 document.getElementById("logo").src = logo;
 
-
-
-
-let projects = loadProjects() || [];
-if(projects.length==0){
-    const defaultProject = new Project("My First Project");
-    projects.push(defaultProject);
-}
-
-localStorage.setItem("todo-projects", JSON.stringify(projects));

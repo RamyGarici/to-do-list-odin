@@ -1,11 +1,12 @@
 export default class Todo {
-    constructor(title,description,dueDate,priority){
+    constructor(title,description,dueDate,priority,color){
         this.title = title;
         this.description = description;
         this.dueDate = new Date(dueDate);
         this.priority = this.validatePriority(priority);
         this.completed = false;
         this.created = new Date();
+        this.color=color
 
     }
     toggleComplete(){

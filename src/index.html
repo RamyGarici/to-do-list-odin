@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <title>ToDo List</title>
 </head>
 <body>
@@ -18,13 +20,40 @@
 
     <div id="project-name">
       <h1 id="project-title"></h1>
+      <button class="cssbuttons-io-button" id="add-todo-btn">Add Todo</button>
     </div>
 
     <main id="main-container">
-      <h1>Todos</h1>
       <ul id="todo-list"></ul>
-      <button class="cssbuttons-io-button" id="add-todo-btn">Add Todo</button>
+      
     </main>
   </div>
+
+<div id="todo-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-todo-modal">&times;</span>
+    <h2>New Todo</h2>
+    <form id="todo-form">
+      <label>Title:</label>
+      <input type="text" id="todo-title" required>
+
+      <label>Description:</label>
+      <textarea id="todo-desc" required></textarea>
+
+      <label>Due Date:</label>
+      <input type="date" id="todo-due" required>
+
+      <label>Priority:</label>
+      <select id="todo-priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <button type="submit">Add Todo</button>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
