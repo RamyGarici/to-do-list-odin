@@ -1,6 +1,7 @@
 
 # Todo-list
 A basic project-based Todo List built with HTML, CSS and JavaScript 
+https://ramygarici.github.io/to-do-list-odin/
 
 ##  Features  
 -  Add, edit, and delete todos  
